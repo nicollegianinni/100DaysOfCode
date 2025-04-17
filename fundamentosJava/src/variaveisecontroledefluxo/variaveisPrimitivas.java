@@ -108,6 +108,28 @@ public class variaveisPrimitivas {
         int somaDoTrimestre = janeiro + fevereiro + março ;
         System.out.println("Esse trimestre deu o total de "+ somaDoTrimestre + " mil reais.");
 
+        //FLOAT
+        float umaCasaDecimal = 10.8f;
+        float duasCasasDecimais = 10.80f;
+        System.out.println(duasCasasDecimais);
+
+        float numeroA = 10;
+        float numeroB = 3;
+        float resultadoFloat = numeroA/ numeroB;
+        System.out.println("Resultado em float: " + resultadoFloat);
+
+        double numeroA2 = 10;
+        double numeroB2 = 3;
+        double resultadoDouble = numeroA2 / numeroB2;
+        System.out.println("Resultado em double: "+ resultadoDouble);
+        // observe que o double apresenta mais casas decimais, oculpando mais espaço de memoria.
+        // Para escolhermos a casa decimais fazemos um seguinte, apenas no float:
+        // Em vez de println (line) na saida escreve p printf (formatado), e depois escreve: %.2f para duas casa decimais etc, em vz de concatenar com + usa se virgula.
+        System.out.printf("o resultado de float pode considerar a quantidade de casa decimal que você quiser, ex.: %.2f " , resultadoFloat);
+        // exemplo de 1 e 3 casas decimas
+        System.out.printf("\n1 casa decimal: %.1f \ne 3 casas decimais: %.3f" , resultadoFloat , resultadoDouble);
+
+
 
     }
 }
