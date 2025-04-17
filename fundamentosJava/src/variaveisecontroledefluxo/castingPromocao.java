@@ -72,5 +72,11 @@ public class castingPromocao {
         floatAleatorio = floatAleatorio + (float) numeroInteiro;
         System.out.println("descritivo de cada valor: \n Double Decimal: " +decimalComum + "\n float (que ganhou valor do decimal): " + flutuante + "\n Soma das atribuicoes por casting: " + numero + "\n e tudo isso em numero inteiro seria " + numeroInteiro + "\nsomado com um float aleatorio da: " + floatAleatorio + "(observe que obedeceu a cada decimal)" );
 
+        // caso curioso o char consegue fazer o casting implicito para o int
+        char charNumero = 12;
+        int intNumero = 10;
+        int somaNumero = intNumero + charNumero;
+        System.out.println("a soma de um char promovido a int é: " + somaNumero);
+
     }
 }
