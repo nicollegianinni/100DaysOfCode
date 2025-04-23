@@ -127,8 +127,13 @@ public class variaveisPrimitivas {
         // Em vez de println (line) na saida escreve p printf (formatado), e depois escreve: %.2f para duas casa decimais etc, em vz de concatenar com + usa se virgula.
         System.out.printf("o resultado de float pode considerar a quantidade de casa decimal que você quiser, ex.: %.2f " , resultadoFloat);
         // exemplo de 1 e 3 casas decimas
-        System.out.printf("\n1 casa decimal: %.1f \ne 3 casas decimais: %.3f" , resultadoFloat , resultadoDouble);
+        System.out.printf("\n1 casa decimal: %.1f \ne 3 casas decimais: %.3f\n" , resultadoFloat , resultadoDouble);
 
+
+        //dividir numero por zero
+        double number = 0;
+        double resultado = 2 / number;
+        System.out.println("Mude o 10 para 0 e verá que não é possivel a divisão, mostra infinity ou dará erro.\n Mas retornando o valor para 2 divido por 10 dá: " + resultado );
 
 
     }
