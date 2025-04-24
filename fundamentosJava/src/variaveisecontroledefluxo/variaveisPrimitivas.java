@@ -135,6 +135,17 @@ public class variaveisPrimitivas {
         double resultado = 2 / number;
         System.out.println("Mude o 10 para 0 e verá que não é possivel a divisão, mostra infinity ou dará erro.\n Mas retornando o valor para 2 divido por 10 dá: " + resultado );
 
+        // incremento proprio = atribuição propria a variavel
+
+        int numeroVar = 5;
+        int outroNumero = numeroVar;
+        int somaNumeroVar = numeroVar + numeroVar;
+        int somaPorSinalDeAtribuicao = numeroVar;
+        somaPorSinalDeAtribuicao += numeroVar;
+        System.out.println("\n Veja que a variavel numeroVar(5) ficou atribuida a variavel outroNumero atraves do sinal igual = " + outroNumero+
+                "\n E a variavel somaNumeroVar foi atribuida somando 2x o numeroVar (2x5) = " + somaNumeroVar+
+                "\n Já a variavel somaPorSinalDeAtribuicao foi atribuida ao numeroVar 2x porem por sinal de atribuição = " + somaPorSinalDeAtribuicao);
+
 
     }
 }
