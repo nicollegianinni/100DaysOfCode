@@ -3,8 +3,9 @@ package variaveisecontroledefluxo;
 import java.util.Scanner;
 
 public class LacoWhile {
-    /* Vamos ver o laço de repetição while
-     * quando o if e else começa a ficar muito extenso, nos usamos o while
+    /* Vamos ver o laço de repetição while: Ele so executa o laço se o parametro que esta no parentese for executado.
+     *Diferente do Do While: que executa o do e depois testa o while.
+     * e muito parecido com if, mas quando o if e else começa a ficar muito extenso, nos usamos o while
      * O while é um comando usado para fazer um laço (loop), repetir um trecho de código algumas vezes.
      * A ideia é que esse trecho de código seja repetido enquanto uma determinada condição permanecer verdadeira.
      */
