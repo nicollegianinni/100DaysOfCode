@@ -30,21 +30,25 @@ public class Vetores {
         temperaturas[3] = 29;
         temperaturas[4] = 28;
 
+        // instanciando e adicionando um array/vetor em uma linha
+        // foram add 5 valores (começando sempre da posição zero)
+        int [] temp = {10,11,12,13,14};
+        System.out.println("A 1º temperatura registrada no modo resumido de instanciar array é : "+temp[0]);
 
-        System.out.println(temperaturas); // assim sai o endereço de mamorio salvo no pc
+        System.out.println(temperaturas); // assim sai o endereço salvo na mamoria
         System.out.println("No 1º primeiro dia a temperatura é: " + temperaturas[0]); // so trocar o indice que encontra o valor que queira
         System.out.println("Temperatura do 5 dia: " + temperaturas[4]);
         System.out.println(temperaturas.length); // saber o tamanho do array
 
         // para saber quais sados tem no array
-        for (int i = 1; i < temperaturas.length; i++) {
-            System.out.println("A temperatura do dia " + (i) + " é " + temperaturas[i] + " graus.");
+        for (int i = 0; i < temperaturas.length; i++) {
+            System.out.println("A temperatura do dia " + (i+1) + " é " + temperaturas[i] + " graus.");
             // observe que as posições que foram preenchidas mostrara os numeros adicionados, mas as posições vazias com numero zero aguardando add de algum dado.
 
         }
         //outra forma de usar o for para ver as temperaturas
-        for (double temp : temperaturas){
-            System.out.println(temp);
+        for (double temp1 : temperaturas){
+            System.out.println(temp1);
         }
     }
 }
