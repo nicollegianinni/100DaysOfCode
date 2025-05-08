@@ -14,7 +14,7 @@ public class Vetores {
         // para digitar/entrada de dados
         Scanner teclado = new Scanner(System.in);
 
-        //exemplo :
+        //exemplo erroneo
         double tempDiaria001 = 31.5;
         double tempDiaria002 = 32;
         double tempDiaria003 = 30;
@@ -24,12 +24,12 @@ public class Vetores {
 
         //ARRAY DE VETOR onde guarda informações numa "fila unica ordenada"
         double[] temperaturas = new double[365];
-        temperaturas[0] = 31.5;
+        temperaturas[0] = 31.5; // a posição incial é o zero.
         temperaturas[1] = 32;
         temperaturas[2] = 30;
         temperaturas[3] = 29;
         temperaturas[4] = 28;
-        // a posição incial é o zero.
+
 
         System.out.println(temperaturas); // assim sai o endereço de mamorio salvo no pc
         System.out.println("No 1º primeiro dia a temperatura é: " + temperaturas[0]); // so trocar o indice que encontra o valor que queira
