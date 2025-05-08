@@ -45,6 +45,12 @@ public class Matrizes {
             }
 
             System.out.println();
+
+            //mudando a nota
+            notasAlunos [3][0] = 10; // 1 nota do aluno posição 0
+            // observe que mudou de 9 para 10
+            System.out.println(notasAlunos[3][0]);
+            System.out.println("A Primeira nota, do aluno 4 mudou de 9 para  : " + notasAlunos[3][0]);
         }
     }
 }
