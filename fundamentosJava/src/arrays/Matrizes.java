@@ -69,7 +69,7 @@ public class Matrizes {
         }
 
         //instanciando em uma linha uma matriz
-        double notasVestibular[][] = {{8, 9, 10}, {10, 9, 8}, {7, 10, 8}, {8, 8, 9}};
+        double[][]  notasVestibular = {{8, 9, 10}, {10, 9, 8}, {7, 10, 8}, {8, 8, 9}};
         System.out.println("Nota do vestibular: " + notasVestibular[0][0]); // mostrar a primeira nota do aluno 1/indice 0
 
         //output imprimindo valores na tela
