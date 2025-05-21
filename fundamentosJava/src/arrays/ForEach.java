@@ -5,7 +5,8 @@ import java.util.Random;
 public class ForEach {
     // Bastante usado nos arrays
     // o For each é mais simples, faz a contagem como o for tradicional, mostra o resultado da lista, mas nao tem como acessar o indice.
-
+    // para entender melhor, é como se dentro do parametro dicesse:
+    // for ( int numero : Lista) -> numero percorra toda lista. (obs.: mesmo sem incremento e o length ele percorre o tamanho da lista).
     public static void main(String[] args) {
 
         System.out.println("For tradional");
