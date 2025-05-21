@@ -9,6 +9,9 @@ public class arrayString {
         nomes[1] = "Gianinni";
         nomes[2] = "Livia";
 
+        //se vc fizer essa declaração ira reiniciar o array
+        //nomes = new String [3];
+
         System.out.println(nomes[1]);
         System.out.println();
       // Para mostrar todos os nomes faz atraves do laço for
