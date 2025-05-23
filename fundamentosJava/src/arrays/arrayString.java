@@ -20,4 +20,5 @@ public class arrayString {
           System.out.println(nomes[i]);
       }
     }
+
 }
