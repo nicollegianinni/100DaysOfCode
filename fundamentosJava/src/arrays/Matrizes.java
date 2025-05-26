@@ -83,5 +83,54 @@ public class Matrizes {
             }
             System.out.println();
         }
+        System.out.println();
+
+        //para inicializar sem declarar o tamanho do array, declara o 1 array e depois adiciona o segund:
+
+        int [][] arrayInt = new int [3][];
+
+        //adiciona o tamanho dos arrays que antes nao declarou ( nao é o valor de cada casa é o so tamanho)
+        arrayInt[0] = new int [3];
+        arrayInt[1] = new int [6];
+        arrayInt[2] = new int [9];
+
+        System.out.println("O tamanho de cada array:");
+        for (int arrayBase [] : arrayInt){
+            System.out.print("\n---------------------");
+            System.out.println();
+            for (int num : arrayBase){
+                System.out.print(" " + num);
+            }
+        }
+        System.out.println();
+
+        // ou ja pode declarar o tamanho e os valores em seguida
+        arrayInt[0] = new int []{1,2,3};
+        arrayInt[1] = new int []{2,4};
+        arrayInt[2] = new int []{3,4,1,3,5,2};
+
+        System.out.println("\nO tamanho de cada array e os valores dentro deles:");
+        for (int arrayBase [] : arrayInt){
+            System.out.print("---------------------");
+            System.out.println();
+            for (int num : arrayBase){
+                System.out.print(" " + num);
+            }
+            System.out.println();
+        }
+        System.out.println();
+
+        // ou ja declara tudo na primeira expressao
+        System.out.println("Declarado o array");
+        int [][] arrayInt2 = {{1,2},{1,2,3},{3,2,1}};
+        for (int arrayBase [] : arrayInt2){
+            System.out.print("---------------------");
+            System.out.println();
+            for (int num : arrayBase){
+                System.out.print(" " + num);
+            }
+            System.out.println();
+        }
+        System.out.println();
     }
 }
