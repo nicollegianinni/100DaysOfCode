@@ -83,5 +83,14 @@ public class Matrizes {
             }
             System.out.println();
         }
+
+        //para inicializar sem declarar o tamanho do array, declara o 1 array e depois adiciona o segund:
+
+        int [][] arrayInt = new int [3][];
+
+        arrayInt[0] = new int [3];
+        arrayInt[1] = new int [6];
+        arrayInt[2] = new int [9];
+
     }
 }
