@@ -119,5 +119,18 @@ public class Matrizes {
             System.out.println();
         }
         System.out.println();
+
+        // ou ja declara tudo na primeira expressao
+        System.out.println("Declarado o array");
+        int [][] arrayInt2 = {{1,2},{1,2,3},{3,2,1}};
+        for (int arrayBase [] : arrayInt2){
+            System.out.print("---------------------");
+            System.out.println();
+            for (int num : arrayBase){
+                System.out.print(" " + num);
+            }
+            System.out.println();
+        }
+        System.out.println();
     }
 }
