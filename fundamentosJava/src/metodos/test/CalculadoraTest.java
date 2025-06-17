@@ -32,5 +32,11 @@ public class CalculadoraTest {
         System.out.println("Testando o erro da divisão por zero");
         double resultado = calculadora.divideDoisNumeros(10,0);
         System.out.println(resultado);
+
+        System.out.println("Testando metodo void com retorno");
+        calculadora.imprimeDivisaoPorDoisNumeros(10,5);
+        System.out.println();
+        calculadora.imprimeDivisaoPorDoisNumeros(10,0);
+
     }
 }
