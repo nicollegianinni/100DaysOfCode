@@ -38,5 +38,19 @@ public class CalculadoraTest {
         System.out.println();
         calculadora.imprimeDivisaoPorDoisNumeros(10,0);
 
+        System.out.println();
+        //observe que quando passamos uma variavel como argumento, os numeros permanece a variavel criada aqui
+        // ja quando passamos usando a calculadora.alteraDoisNumeros usamos o parametro criado na função/metodo
+        int num1 =1;
+        int num2 =2;
+        System.out.println("Importando os parametros da função:");
+        calculadora.alteraDoisNumeros(num1,num2);
+        System.out.println();
+        System.out.println("Dentro dessa classe de teste: ");
+        System.out.println(num1);
+        System.out.println(num2);
+        System.out.println();
+
+
     }
 }
