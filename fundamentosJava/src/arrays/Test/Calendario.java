@@ -10,5 +10,13 @@ public class Calendario {
         for (int i = 0; i < mes.length; i++) {
             System.out.println("O mes de "+mes[i]+ " tem " + dias[i]+ "dias.");
         }
+
+        System.out.println();
+        //outro modo de mostrar usando for each
+        for (String c:mes) {
+            for (int n:dias)
+            System.out.println("O mes de "+ c + " tem "+ n + " dias.");
+
+        }
     }
 }
