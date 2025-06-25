@@ -50,5 +50,12 @@ public class Vetores {
         for (double temp1 : temperaturas){
             System.out.println(temp1);
         }
+
+        System.out.println();
+        int [] n = {10,20,30,40,50,60};
+
+        for (int l=0;l<n.length;l++){
+            System.out.println("Na posição " + l + " temos o valor de " + n[l]);
+        }
     }
 }
