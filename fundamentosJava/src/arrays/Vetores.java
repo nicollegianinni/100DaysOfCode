@@ -1,5 +1,6 @@
 package arrays;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Vetores {
@@ -60,8 +61,18 @@ public class Vetores {
         System.out.println();
         System.out.println("Mostrando a posição 'correta' começando em 1 em vez de 0");
 
-        for (int l = 1; l <= n.length -1; l++) {
-            System.out.println("Na posição " + l + " temos o valor de " + n[l-1]);
+        for (int l = 1; l <= n.length - 1; l++) {
+            System.out.println("Na posição " + l + " temos o valor de " + n[l - 1]);
         }
+
+        System.out.println("ordenando os numeros do array");
+        double v[] = {3, 10.5, 12, -4, 58};
+        //vamos por em ordem os numeros
+        Arrays.sort(v);
+        for (double num : v) {
+            System.out.println(num);
+        }
+
     }
+
 }

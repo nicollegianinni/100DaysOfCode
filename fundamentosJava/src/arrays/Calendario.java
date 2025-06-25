@@ -1,4 +1,4 @@
-package arrays.Test;
+package arrays;
 
 public class Calendario {
 
