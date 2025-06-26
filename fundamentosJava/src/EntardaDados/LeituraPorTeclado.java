@@ -1,3 +1,5 @@
+package EntardaDados;
+
 import java.util.Scanner;
 
 public class LeituraPorTeclado {
