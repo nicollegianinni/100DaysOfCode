@@ -30,9 +30,9 @@ public class ClienteProvedor {
 //        //agora saira: Eliza e os 2 nomes cliente2 e cliente3
 //        System.out.println();
 //        ProvedorInternet provedor01 = new ProvedorInternet("Tim", clientes);
-//        for (ProvedorInternet prov: provedor01){
-//            prov.imprime();
-//        }
+//        provedor01.setCliente(clientes);
+//        provedor01.imprime();
+
     }
 }
 

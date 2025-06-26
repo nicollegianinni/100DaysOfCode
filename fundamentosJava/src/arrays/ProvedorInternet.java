@@ -4,8 +4,6 @@ public class ProvedorInternet implements Imprime{
     private String nome;
     private Cliente[] cliente;
 
-    public ProvedorInternet() {
-    }
 
     public ProvedorInternet(String nome, Cliente[] clientes) {
         this.nome = nome;

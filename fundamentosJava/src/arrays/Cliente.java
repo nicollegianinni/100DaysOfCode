@@ -2,9 +2,11 @@ package arrays;
 
 public class Cliente implements Imprime {
     private String nome;
+    private ProvedorInternet provedor;
 
     public Cliente(String nome) {
         this.nome = nome;
+
     }
 
     @Override
@@ -18,5 +20,13 @@ public class Cliente implements Imprime {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public ProvedorInternet getProvedor() {
+        return provedor;
+    }
+
+    public void setProvedor(ProvedorInternet provedor) {
+        this.provedor = provedor;
     }
 }
