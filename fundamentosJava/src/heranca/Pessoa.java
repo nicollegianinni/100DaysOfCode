@@ -1,12 +1,11 @@
-package herança;
+package heranca;
 
 public class Pessoa {
 
     private String nome;
     private int idade;
-    private Endereco endereço;
+    private Endereco endereco;
 
-    private Funcionario funcionario;
 
     //construtor default
     public Pessoa(String nome, int idade) {
@@ -19,12 +18,9 @@ public class Pessoa {
         System.out.println(" DADOS DA PESSOA ");
         System.out.println("Nome: " + this.getNome());
         System.out.println("idade: " + this.getIdade());
-        if (endereço == null) return;
+        if (endereco == null) return;
         System.out.println("Endereço: " + this.getEndereço().getRua());
         System.out.println("Nº: " + this.getEndereço().getNumero());
-        if(this.getFuncionario()==null)return;
-        System.out.println("________________________________");
-        System.out.println("Salario: " + this.getFuncionario().getSalario());
     }
 
     public String getNome() {
@@ -44,18 +40,12 @@ public class Pessoa {
     }
 
     public Endereco getEndereço() {
-        return endereço;
+        return endereco;
     }
 
     public void setEndereço(Endereco endereço) {
-        this.endereço = endereço;
+        this.endereco = endereço;
     }
 
-    public Funcionario getFuncionario() {
-        return funcionario;
-    }
 
-    public void setFuncionario(Funcionario funcionario) {
-        this.funcionario = funcionario;
-    }
 }

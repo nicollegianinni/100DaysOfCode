@@ -1,4 +1,7 @@
-package arrays;
+package arrays.Test;
+
+import arrays.Empresa;
+import arrays.Funcionario;
 
 public class EmpresaFuncionario {
 
