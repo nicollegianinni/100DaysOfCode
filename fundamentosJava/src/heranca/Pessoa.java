@@ -6,11 +6,24 @@ public class Pessoa {
     private int idade;
     private Endereco endereco;
 
+    //IGNORE ESSES 3 BLOCOS ABAIXO; ELES SÃO PARA VERMOS COMO FUNCIONA A INICALIZAÇÃO (VEJA DEPOIS QUE ACABAR HERANÇA EM Test> Main02)
+    static {
+        System.out.println("Bloco de inicialização estatico de Pessoa");
+    }
+
+    {
+        System.out.println("1 Bloco de inicalização não estatico de Pessoa");
+    }
+
+    {
+        System.out.println("2 Bloco de inicalização não estatico de Pessoa");
+    }
 
     //construtor default
     public Pessoa(String nome, int idade) {
         this.nome = nome;
         this.idade = idade;
+        System.out.println("Dentro do metodo construtor");  // ignore é sobre inicialização
     }
 
     public void imprime() {

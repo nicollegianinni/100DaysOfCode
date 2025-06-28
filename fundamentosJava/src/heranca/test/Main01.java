@@ -1,6 +1,7 @@
-package heranca;
+package heranca.test;
 
 import EntardaDados.TesteExtendePai;
+import heranca.*;
 
 public class Main01 {
 
