@@ -1,6 +1,6 @@
 package metodos;
-//Classe criada para utilizar o metodo toString()
 
+//Classe criada para utilizar o metodo toString()
 public class Anime {
     private  String nome;
 
