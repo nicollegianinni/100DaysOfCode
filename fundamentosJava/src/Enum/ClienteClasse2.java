@@ -1,11 +1,13 @@
 package Enum;
-//Adiciona o Enum = TipoClienteEnum por associação adicionando ao atributo
+//Para substituir uma variavel que é limitada usamos a classe ENUM
+//USANDO A CLASSE ENUM= TipoClienteEnum = PESSOA FISICA E JURIDICA, adiciona a classe por associação como atributo.
 public class ClienteClasse2 {
+
     private String name;
     private int CPF;
-    private TipoClienteEnum tipo;
+    private TipoClienteEnum tipo; // adicionamos Aqui a classe TipoClienteEnum
 
-    public ClienteClasse2(String name, int CPF, TipoClienteEnum tipo) {
+    public ClienteClasse2(String name, int CPF, TipoClienteEnum tipo) { // adiciona tambem ao construtor
         this.name = name;
         this.CPF = CPF;
         this.tipo = tipo;
@@ -35,12 +37,12 @@ public class ClienteClasse2 {
         this.tipo = tipo;
     }
 
-    @Override
+    @Override                             //metodo toString() para saida dos atributos
     public String toString() {
         return "Com a classe Enum{" +
-                "name='" + name + '\'' +
-                ", CPF=" + CPF +'\'' +
-                ", tipo=" + tipo +'\'' +
+                "name='" + this.getName() + '\'' +
+                ", CPF=" + this.getCPF() +'\'' +
+                ", tipo=" + this.getTipo() +'\'' +
                 '}';
     }
 }

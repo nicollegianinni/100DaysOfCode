@@ -1,22 +1,26 @@
 package Enum;
-//usando a classe ENUM
-public class ClienteClasse1 {
+//Para criar uma variavel limitada usamos a classe ENUM, que tranforma numa constante.
 
+// mas nesse momento vamos usar uma variavel STATIC FINAL como se fosse um "ENUM"
+// para compararmos o comportamento.
+public class ClienteClasse1 {
     private String name;
     private int CPF;
-    private String type; //Para substituir uma variavel que é limitada usamos a classe ENUM
-//PODERIA ADICIONAR O MODIFICADOR FINAL E STATIC PARA DEIXAR COMO UMA CONSTANTE
+
+//ADICIONAR O MODIFICADOR FINAL E STATIC PARA DEIXAR COMO UMA CONSTANTE como se fosse um ENUM
     public static final String PESSOA_FISICA = "PESSOA_FISICA";
     public static final String PESSOA_JURIDICA = "PESSOA_JURIDICA";
 
-//    private ClienteEnum cliente;
+    private String type;
 
-    public ClienteClasse1(String name, int CPF, String type) {
-        if (!type.equals(PESSOA_FISICA)&& !type.equals(PESSOA_JURIDICA))
-            return;
+    // porem no metodo construtor, o cliente precisa passar os daados PESSOA_FISICA E PESSOA_JURIDICA nessa formatação
+    public ClienteClasse1(String name, int CPF, String tipo) {
+        if (!tipo.equals(PESSOA_FISICA)&& !tipo.equals(PESSOA_JURIDICA))
+            return ;
+
         this.name = name;
         this.CPF = CPF;
-        this.type = type;
+        this.type = tipo;
     }
 
     public String getName() {
@@ -46,9 +50,10 @@ public class ClienteClasse1 {
     @Override
     public String toString() {
         return
-                "name='" + name + '\'' +
-                ", CPF=" + CPF + '\'' +
-                ", type='" + type + '\'' ;
+                "name='" + this.getName() + '\'' +
+                ", CPF=" + this.getCPF()+ '\'' +
+                 ", Tipo da conta: " + this.getType() ;
+
 
     }
 }
