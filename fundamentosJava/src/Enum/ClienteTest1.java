@@ -1,5 +1,5 @@
 package Enum;
-//USANDO VARIAVEL COMO SE FOSSE ENUM
+//USANDO VARIAVEL STATIC FINAL COMO SE FOSSE ENUM
 //ENUMs serve para nao ter a inconsistencia de dados, não ir para o banco de dados com nomes sem padrão de formatação.
 // Para esse exemplo 'ClienteClasse1' não usamos ENUM, usamos uma variavel STATIC E FINAL para 'funcionar como ENUM'
 // mas para isso, precisa criar um metodo de checagem (condição if)

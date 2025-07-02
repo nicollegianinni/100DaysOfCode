@@ -3,14 +3,20 @@ package Enum;
 //USANDO A CLASSE ENUM= TipoClienteEnum = PESSOA FISICA E JURIDICA, adiciona a classe por associação como atributo.
 public class ClienteClasse2 {
 
+    public enum TipoPagamento{     // PODE SE CRIAR UM ENUM DENTRO DA CLASSE, sem precisar criar classe Enum
+        DEBITO, CREDITO
+    }
     private String name;
     private int CPF;
-    private TipoClienteEnum tipo; // adicionamos Aqui a classe TipoClienteEnum
+    private TipoClienteEnum tipo; // adicionamos Aqui a classe TipoClienteEnum criada fora
 
-    public ClienteClasse2(String name, int CPF, TipoClienteEnum tipo) { // adiciona tambem ao construtor
+    private TipoPagamento tipoPagamento; // adiciona aqui o Enum TipoPagamento criado na propria classe
+
+    public ClienteClasse2(String name, int CPF, TipoClienteEnum tipo, TipoPagamento tipoPagamento) { // adiciona tambem ao construtor
         this.name = name;
         this.CPF = CPF;
         this.tipo = tipo;
+        this.tipoPagamento = tipoPagamento;
     }
 
     public String getName() {
@@ -37,12 +43,21 @@ public class ClienteClasse2 {
         this.tipo = tipo;
     }
 
-    @Override                             //metodo toString() para saida dos atributos
+    public TipoPagamento getTipoPagamento() {
+        return tipoPagamento;
+    }
+
+    public void setTipoPagamento(TipoPagamento tipoPagamento) {
+        this.tipoPagamento = tipoPagamento;
+    }
+
+    @Override
     public String toString() {
-        return "Com a classe Enum{" +
-                "name='" + this.getName() + '\'' +
-                ", CPF=" + this.getCPF() +'\'' +
-                ", tipo=" + this.getTipo() +'\'' +
+        return "ClienteClasse2{" +
+                "name='" + name + '\'' +
+                ", CPF=" + CPF +
+                ", tipo=" + tipo +
+                ", tipoPagamento=" + tipoPagamento +
                 '}';
     }
 }
