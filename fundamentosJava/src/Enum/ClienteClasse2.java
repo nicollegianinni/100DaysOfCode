@@ -1,11 +1,13 @@
 package Enum;
+
 //Para substituir uma variavel que é limitada usamos a classe ENUM
 //USANDO A CLASSE ENUM= TipoClienteEnum = PESSOA FISICA E JURIDICA, adiciona a classe por associação como atributo.
 public class ClienteClasse2 {
 
-    public enum TipoPagamento{     // PODE SE CRIAR UM ENUM DENTRO DA CLASSE, sem precisar criar classe Enum
+    public enum TipoPagamento {     // PODE SE CRIAR UM ENUM DENTRO DA CLASSE, sem precisar criar classe Enum
         DEBITO, CREDITO
     }
+
     private String name;
     private int CPF;
     private TipoClienteEnum tipo; // adicionamos Aqui a classe TipoClienteEnum criada fora
@@ -15,12 +17,15 @@ public class ClienteClasse2 {
     private TipoContaEnum tipoConta; // so crie essa associação com o Enum 'TipoConta' por ultimo,
     // depois de testar os anteriores na ClasseTest2, adicione tambem ao construtor e ao toString()
 
-    public ClienteClasse2(String name, int CPF, TipoClienteEnum tipo, TipoPagamento tipoPagamento, TipoContaEnum tipoConta) { // adiciona tambem ao construtor
+    private CategoriaClienteEnum categoriaCliente; //Assim como associação 'TipoContaEnum' so escreva essa associação depois de testar os atributos anteriores
+
+    public ClienteClasse2(String name, int CPF, TipoClienteEnum tipo, TipoPagamento tipoPagamento, TipoContaEnum tipoConta, CategoriaClienteEnum categoriaCliente) { // adiciona tambem ao construtor
         this.name = name;
         this.CPF = CPF;
         this.tipo = tipo;
         this.tipoPagamento = tipoPagamento;
         this.tipoConta = tipoConta;
+        this.categoriaCliente = categoriaCliente;
     }
 
     public String getName() {
@@ -55,6 +60,14 @@ public class ClienteClasse2 {
         this.tipoPagamento = tipoPagamento;
     }
 
+    public CategoriaClienteEnum getCategoriaCliente() {
+        return categoriaCliente;
+    }
+
+    public void setCategoriaCliente(CategoriaClienteEnum categoriaCliente) {
+        this.categoriaCliente = categoriaCliente;
+    }
+
     @Override
     public String toString() {
         return "ClienteClasse2{" +
@@ -62,9 +75,10 @@ public class ClienteClasse2 {
                 ", CPF=" + CPF +
                 ", tipo=" + tipo + // Classe: TipoClienteEnum
                 ", tipoPagamento=" + tipoPagamento + // Enum criado na classe
-                ", NumerotipoConta: "+tipoConta+
-                ", NumerotipoConta: "+tipoConta.VALOR+
-                ", " +tipoConta.nomeRelatorio+
+                ", NumerotipoConta: " + tipoConta +
+                ", NumerotipoConta: " + tipoConta.VALOR +
+                ", " + tipoConta.nomeRelatorio +
+                ", Categoria do Cliente: "+ categoriaCliente+
                 '}';
     }
 }
