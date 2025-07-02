@@ -12,11 +12,15 @@ public class ClienteClasse2 {
 
     private TipoPagamento tipoPagamento; // adiciona aqui o Enum TipoPagamento criado na propria classe
 
-    public ClienteClasse2(String name, int CPF, TipoClienteEnum tipo, TipoPagamento tipoPagamento) { // adiciona tambem ao construtor
+    private TipoContaEnum tipoConta; // so crie essa associação com o Enum 'TipoConta' por ultimo,
+    // depois de testar os anteriores na ClasseTest2, adicione tambem ao construtor e ao toString()
+
+    public ClienteClasse2(String name, int CPF, TipoClienteEnum tipo, TipoPagamento tipoPagamento, TipoContaEnum tipoConta) { // adiciona tambem ao construtor
         this.name = name;
         this.CPF = CPF;
         this.tipo = tipo;
         this.tipoPagamento = tipoPagamento;
+        this.tipoConta = tipoConta;
     }
 
     public String getName() {
@@ -56,8 +60,11 @@ public class ClienteClasse2 {
         return "ClienteClasse2{" +
                 "name='" + name + '\'' +
                 ", CPF=" + CPF +
-                ", tipo=" + tipo +
-                ", tipoPagamento=" + tipoPagamento +
+                ", tipo=" + tipo + // Classe: TipoClienteEnum
+                ", tipoPagamento=" + tipoPagamento + // Enum criado na classe
+                ", NumerotipoConta: "+tipoConta+
+                ", NumerotipoConta: "+tipoConta.VALOR+
+                ", " +tipoConta.nomeRelatorio+
                 '}';
     }
 }
