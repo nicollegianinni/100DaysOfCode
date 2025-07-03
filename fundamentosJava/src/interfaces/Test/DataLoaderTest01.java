@@ -22,7 +22,9 @@ public class DataLoaderTest01 {
 
         //Nao pode criar objeto da interface
         // Não pode instanciar tambem uma classe abstract
-//        DataLoader dataLoader = new DataLoader();
+        //   DataLoader dataLoader = new DataLoader();
+
+        //metodo static na interface
 
     }
 }

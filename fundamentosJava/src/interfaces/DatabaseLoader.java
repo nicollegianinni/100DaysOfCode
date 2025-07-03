@@ -18,4 +18,10 @@ public class DatabaseLoader implements DataLoader, DataRemover{
         DataLoader.super.checkAutentication();
         System.out.print ("do bando de dados...");
     }
+    // Esse metodo static foi criado para mostrar que nao pode subescrever da interface mas
+    // nao pode ser subescrita pelas classes filhas implementadas porque é statico
+    //pode criar mas sera outro metodo
+    public static void retrieveMaxDataSize(){
+        System.out.println("Dentro do retrieve data max da interface");
+    }
 }
