@@ -1,5 +1,6 @@
 package Enum;
 //SAIDA USANDO A CLASSE ENUM PARA PESSOA JURIDICA E FISICA
+
 public class ClienteTeste2 {
     public static void main(String[] args) {
                                                                                                            //Esses objetos 'TipoPagamento' e 'TipoConta' foram criados depois

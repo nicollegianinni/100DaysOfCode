@@ -20,5 +20,5 @@ public enum CategoriaClienteEnum {
     public double calculeDesconto (double valor) {
 
         return valor ;
-    }// metodo a ser sobrescrito
+    }
 }

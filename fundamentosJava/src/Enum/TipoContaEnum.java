@@ -15,7 +15,6 @@ public enum TipoContaEnum {
         this.nomeRelatorio = nomeRelatorio;
     }
 
-
     public static TipoContaEnum tipoContaPorNomeRelatorio(String nomeRelatorio) {
         for (TipoContaEnum tipoConta : values()) {
             if (tipoConta.getNomeRelatorio().equals(nomeRelatorio)) {
