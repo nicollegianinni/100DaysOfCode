@@ -1,12 +1,12 @@
 package Abstract;
-//CLASSE ABSTRATA
+//CLASSE ABSTRATA MÃE
 //Criada para resolver problema de design, de desenho de codigo.
 // imagine numa empresa com varios cargos (gerente,desenvolvedor,cordenador etc)
 // Cria se uma classe funcionario é um template, um modelo de como ser seguido
 //A classe abstract é um template, nao pode ser instanciada
 // NÃO PODE ter um metodo abstrato numa classe concreta
 
-public abstract class Funcionario {
+public abstract class Funcionario extends Pessoa{
     protected String nome;
     protected double salario;
     protected Cargo cargo;// criei um ENUM so para mostrar impresso os cargos mais organizados
@@ -16,7 +16,18 @@ public abstract class Funcionario {
         this.nome = nome;
         this.salario = salario;
         this.cargo = cargo;
-       //calculaBonus();  se tivesse um metodo abstrato nessa classe, usaria o metodo no construtor
+
+        //calculaBonus();  se tivesse um metodo abstrato nessa classe, usaria o metodo no construtor
+
+    }
+    //metodo abstrato herdado da classe mae Pessoa, se a mae aderir ao metodo as filhas tem que aderir
+    //as filhas que editarao o corpo desse metodo
+    public abstract void Status();
+
+    //metodo concreto herdado da classe abstract avo Pessoa
+    // essa metodo as filhas podem ou nao aderir por nao ser concreto
+    public void NIS(){
+        System.out.println("NIS Ativo");
     }
 
     //metodo para calcular um bonus PRL dependendo do cargo dos funcionarios
@@ -44,6 +55,7 @@ public abstract class Funcionario {
                 ", salario=" + salario +
                 ", cargo=" + cargo +
                 ", PRL=" + calculaPRL() +
+                ", Status: " +  +
                 '}';
     }
 }
