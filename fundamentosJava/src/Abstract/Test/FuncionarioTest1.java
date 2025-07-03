@@ -1,9 +1,7 @@
 package Abstract.Test;
 
-import Abstract.Agilistas;
-import Abstract.Cargo;
-import Abstract.Desenvolvedores;
-import Abstract.Gerente;
+import Abstract.*;
+
 //CLASSE DE SAIDA - Referencia as classes: Funcionario, Desenvolvedores e Gerente.
 public class FuncionarioTest1 {
     public static void main(String[] args) {
@@ -15,6 +13,9 @@ public class FuncionarioTest1 {
         System.out.println(funcionario1);
         System.out.println(funcionario2);
         System.out.println(funcionario3);
+
+        //NAO PODE INTANCIAR A CLASSE ABSTRACT NEM INTERFACES
+//        Funcionario fun = new Funcionario("nome", 5000, Cargo.GERENTE);
 
 
     }

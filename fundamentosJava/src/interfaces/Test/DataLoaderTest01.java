@@ -1,5 +1,6 @@
 package interfaces.Test;
 
+import interfaces.DataLoader;
 import interfaces.DatabaseLoader;
 import interfaces.FileDataLoader;
 
@@ -18,5 +19,10 @@ public class DataLoaderTest01 {
         fileDataLoader.remove();
         fileDataLoader.checkPermission();
         fileDataLoader.checkAutentication();
+
+        //Nao pode criar objeto da interface
+        // Não pode instanciar tambem uma classe abstract
+//        DataLoader dataLoader = new DataLoader();
+
     }
 }
