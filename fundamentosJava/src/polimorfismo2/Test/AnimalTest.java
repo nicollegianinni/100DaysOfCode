@@ -8,6 +8,9 @@ public class AnimalTest {
         Animal gato = new Mamifero("gato", 4,20,4,"Preto/Branco/Laranja/Marrom/Cinza");
         System.out.println(gato); //  chama o metodo toString()
 
+        //add atraves do metodo get e set
+        gato.setNome("Gato");
+
 
     }
 

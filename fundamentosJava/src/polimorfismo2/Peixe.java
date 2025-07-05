@@ -21,7 +21,7 @@ public class Peixe extends Animal{
 
     @Override
     public String alimentar() {
-        System.out.println("Sucção");
+        System.out.println("Substancias");
         return alimentar();
     }
 

@@ -16,7 +16,7 @@ public class Reptil extends Animal{
 
     @Override
     public String alimentar() {
-        System.out.println("Mastigando");
+        System.out.println("Onivoro");
         return alimentar();
     }
 

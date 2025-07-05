@@ -20,7 +20,7 @@ public class Ave extends Animal{
 
     @Override
     public String alimentar() {
-        System.out.println("Bicando");
+        System.out.println("Grãos");
         return alimentar();
     }
 
