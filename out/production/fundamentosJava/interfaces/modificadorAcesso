@@ -1,0 +1,8 @@
+
+Padrão de hierarquia de modificadores de acesso
+Nunca uma classe pode ter um metodo mais restritivo que a classe mae ou que ele implementa
+
+private -> Não permite as demais classes acessarem
+Default -> por padrão na interface permite outras classes 'filhas implementadas' subescreverem o metodo
+protected - > permite as classes e todos de dentro do pacote acessarem o metodo
+public -> todos podem acessar

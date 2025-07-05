@@ -1,12 +1,14 @@
 package interfaces;
-//INTERFACE serve para contrato de implementação, ou seja ser como um formulario a ser implementado nas 'filhas'
+//INTERFACE serve para CONTRATO de implementação, ou seja ser como um formulario a ser implementado nas 'filhas'
 // É uma boa pratica utilizar interface entrando no conceito de programação orientada a interface,
 // desacoplando  o codigo e fazendo um melhor uso do polimorfismo
 import java.security.PublicKey;
 
 public interface DataLoader {
     //PODE CRIAR ATRUBUTOS, TODOS ATRIBUTOS CRIADOS NA INTERFACE SÃO STATICOS E FINAIS OU SEJA CONSTANTES.
+
     public static final int MAX_DATA_SIZE =10;
+
     //Como é uma constante te que declarar o valor
     // public observe que o static final é redundante vem por padrão
     //o certo seria escrever assim:
