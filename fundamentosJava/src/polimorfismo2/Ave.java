@@ -8,19 +8,26 @@ public class Ave extends Animal{
         this.corPena = corPena;
     }
 
+    public void fazerNinho(){
+        System.out.println("Faz ninho");
+    }
+
     @Override
     public String locomover() {
-        return null;
+        System.out.println("Voando");
+        return locomover();
     }
 
     @Override
     public String alimentar() {
-        return null;
+        System.out.println("Bicando");
+        return alimentar();
     }
 
     @Override
     public String emitirSom() {
-        return null;
+        System.out.println("Emite som de ave");
+        return emitirSom();
     }
 
     public String getCorPena() {

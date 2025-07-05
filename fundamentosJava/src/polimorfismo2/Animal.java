@@ -56,8 +56,6 @@ public abstract class Animal {
     }
 
 //METODO TO STRING PARA SAIDA DE DADOS SEM PRECISAR USAR GET E SET
-
-
     @Override
     public String toString() {
         return "Animal{" +

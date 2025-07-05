@@ -8,19 +8,27 @@ public class Peixe extends Animal{
         this.corEscama = corEscama;
     }
 
+//METODO PROPRIO
+    public void soltaBolha(){
+        System.out.println("Solta bolha");
+    }
+
     @Override
     public String locomover() {
-        return null;
+        System.out.println("Nadando");
+        return locomover();
     }
 
     @Override
     public String alimentar() {
-        return null;
+        System.out.println("Sucção");
+        return alimentar();
     }
 
     @Override
     public String emitirSom() {
-        return null;
+        System.out.println("Não emite som aparente");
+        return emitirSom();
     }
 
     public String getCorEscama() {

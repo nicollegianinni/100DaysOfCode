@@ -10,17 +10,20 @@ public class Reptil extends Animal{
 
     @Override
     public String locomover() {
-        return null;
+        System.out.println("Rastejando");
+        return locomover();
     }
 
     @Override
     public String alimentar() {
-        return null;
+        System.out.println("Mastigando");
+        return alimentar();
     }
 
     @Override
     public String emitirSom() {
-        return null;
+        System.out.println("Emite som de Reptil");
+        return emitirSom();
     }
 
     public String getCorEscama() {

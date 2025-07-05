@@ -15,17 +15,20 @@ public class Mamifero extends Animal{
     //METODO ABSTRACT OBRIGATORIO NAS 'CLASSES FILHAS'
     @Override
     public String locomover() {
-        return null;
+        System.out.println("Andando");
+        return locomover();
     }
 
     @Override
     public String alimentar() {
-        return null;
+        System.out.println("Mamando");
+        return alimentar();
     }
 
     @Override
     public String emitirSom() {
-        return null;
+        System.out.println("Emite som de mamifero");
+        return emitirSom();
     }
 
     //gat do atrubuto proprio 'cor de pelo'
