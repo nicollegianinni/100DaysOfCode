@@ -20,4 +20,16 @@ public class CalculadoraImposto {
         System.out.println("Valor: : " + tomate.getValor());
         System.out.println("Imposto: " + imposto);
     }
+
+    //APLICANDO SERVICE A BOAS PRATICAS, USANDO POLIMORFISMO
+    //metodo mais clean code, mais generico, mais desacoplado
+    public static void CalculaImposto(Produto produto){
+        System.out.println("----Relatorio de imposto----");
+        double imposto = produto.calcularImposto(); // imposto recebe o metodo da interface
+        System.out.println("Produto: "+ produto.getNome());
+        System.out.println("R$ : "+ produto.getValor());
+        System.out.println("Imposto: "+ imposto);
+        System.out.println("---------------------------");
+
+    }
 }
