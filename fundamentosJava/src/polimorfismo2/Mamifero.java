@@ -11,6 +11,9 @@ public class Mamifero extends Animal{
         super(nome, peso, idade, membros);
         this.corPelo = corPelo;
     }
+    public Mamifero(){
+
+    }
 
     //METODO ABSTRACT OBRIGATORIO NAS 'CLASSES FILHAS'
     @Override

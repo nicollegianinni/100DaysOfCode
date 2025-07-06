@@ -14,6 +14,9 @@ public abstract class Animal {
         this.idade = idade;
         this.membros = membros;
     }
+    public Animal(){
+
+    }
 
 //METODOS ABSTRACT ESCRITA E IMPLEMENTAÇÃO OBRIOGATORIA
     public abstract String locomover ();

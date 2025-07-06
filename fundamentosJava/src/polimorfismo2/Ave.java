@@ -8,6 +8,9 @@ public class Ave extends Animal{
         this.corPena = corPena;
     }
 
+    public Ave() {
+    }
+
     public void fazerNinho(){
         System.out.println("Faz ninho");
     }

@@ -7,6 +7,9 @@ public class Peixe extends Animal{
         super(nome, peso, idade, membros);
         this.corEscama = corEscama;
     }
+    public Peixe(){
+
+    }
 
 //METODO PROPRIO
     public void soltaBolha(){

@@ -7,6 +7,9 @@ public class Reptil extends Animal{
         super(nome, peso, idade, membros);
         this.corEscama = corEscama;
     }
+    public Reptil(){
+
+    }
 
     @Override
     public String locomover() {
