@@ -20,17 +20,20 @@ public class Video implements AcoesVideo {
 
     @Override
     public void play() {
-
+        this.reproduzindo = true;
+        System.out.println(" Esta reproduzindo ");
     }
 
     @Override
     public void pause() {
-
+        this.reproduzindo = false;
+        System.out.println(" Esta pausado ");
     }
 
     @Override
     public void like() {
-
+        this.curtidas++;
+        System.out.println(" Você ganhou mais uma curtida! ");
     }
 
     public String getTitulo() {
@@ -44,9 +47,11 @@ public class Video implements AcoesVideo {
     public int getAvaliacoes() {
         return avaliacoes;
     }
-
+//MEDIA DE AVALIAÇÕES POR VISUALIZAÇÕES
     public void setAvaliacoes(int avaliacoes) {
-        this.avaliacoes = avaliacoes;
+        int novaAval;
+        novaAval = ((this.avaliacoes + avaliacoes)/this.views);
+        this.avaliacoes = novaAval;
     }
 
     public int getViews() {

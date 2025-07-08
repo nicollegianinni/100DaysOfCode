@@ -35,15 +35,28 @@ public class Usuario extends Pessoa implements AcoesVideo{
 
     }
 
+    public String getLogin() {
+        return login;
+    }
+
+    public void setLogin(String login) {
+        this.login = login;
+    }
+
+    public int getTotalAssistido() {
+        return totalAssistido;
+    }
+
+    public void setTotalAssistido(int totalAssistido) {
+        this.totalAssistido = totalAssistido;
+    }
+
     @Override
     public String toString() {
-        return "Usuario{" +
+        return "Classe Usuario{" +
                 "login='" + login + '\'' +
-                ", totalAssistido=" + totalAssistido +
-                ", nome='" + nome + '\'' +
-                ", idade=" + idade +
-                ", sexo=" + sexo +
-                ", experiencia=" + experiencia +
+                ", totalAssistido=" + totalAssistido+
+                ", " + super.toString()+
                 '}';
     }
 }
