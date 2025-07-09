@@ -1,6 +1,6 @@
 package polimorfismo.Test;
 
-import polimorfismo.CalculadoraImposto;
+import polimorfismo.servico.CalculadoraImposto;
 import polimorfismo.Computador;
 import polimorfismo.Produto;
 import polimorfismo.Tomate;

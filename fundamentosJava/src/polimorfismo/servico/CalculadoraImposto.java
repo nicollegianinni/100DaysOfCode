@@ -1,4 +1,9 @@
-package polimorfismo;
+package polimorfismo.servico;
+
+import polimorfismo.Computador;
+import polimorfismo.Produto;
+import polimorfismo.Tomate;
+
 //SERVICE SERVE PARA A REGRA DE NEGOCIO
 // se nao tiver acessando nenhum atributo de classe pode tornar os metodos staticos
 public class CalculadoraImposto {
