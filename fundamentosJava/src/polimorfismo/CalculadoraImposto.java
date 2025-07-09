@@ -29,7 +29,16 @@ public class CalculadoraImposto {
         System.out.println("Produto: "+ produto.getNome());
         System.out.println("R$ : "+ produto.getValor());
         System.out.println("Imposto: "+ imposto);
-        System.out.println("---------------------------");
+        if (produto instanceof Tomate){ //Caso queira que mostre um atributo de alguma classe filha Faz por CASTING
 
+            Tomate tomate = (Tomate) produto; //CASTING
+            System.out.println("Data Validade: "+tomate.getDataValidade()); //saida esperada, nesse caso mostrar data de validade da classe tomate
+
+//            System.out.println(((Tomate) produto).getDataValidade()); // ou mais simplificado ainda o CASTING
+//
+//            String dataValidade = ((Tomate)produto).getDataValidade(); // existem varias formas de fazer o CASTING
+//            System.out.println(dataValidade);
+        }
+        System.out.println("---------------------------");
     }
 }
