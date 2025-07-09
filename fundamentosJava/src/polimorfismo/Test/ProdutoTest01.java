@@ -14,7 +14,6 @@ public class ProdutoTest01 {
         //SAIDA: METODO TO STRING DA CLASSE MAE
         System.out.println(produto1);
         produto1.InfoAdd();
-
         System.out.println();
 
         System.out.println(produto2);
@@ -27,7 +26,11 @@ public class ProdutoTest01 {
 
         CalculadoraImposto.calcularImpostoComputador(computador);
         System.out.println("--------------------------------------");
-        CalculadoraImposto.calcularImpostoComputador(tomate);
+        CalculadoraImposto.calcularImpostoTomate(tomate);
+        System.out.println();
+        //chamando pelo metodo mais desacoplado e mais generico da classe calculadora de imposto
+        CalculadoraImposto.CalculaImposto(computador);
+        CalculadoraImposto.CalculaImposto(tomate);
 
     }
 }

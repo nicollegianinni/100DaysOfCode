@@ -1,7 +1,5 @@
 package polimorfismo;
 
-import jdk.swing.interop.SwingInterOpUtils;
-
 public class Tomate extends Produto{
     public  static final double IMPOSTO = 0.06;
     //atributo proprio da classe filha
@@ -38,6 +36,7 @@ public class Tomate extends Produto{
 
     @Override
     public String toString() {
-        return "Data de validade: " + dataValidade ;
+        return ""+ super.toString()+
+                "Data de validade: " + dataValidade ;
     }
 }
