@@ -1,0 +1,17 @@
+
+
+EXPLICANDO AS EXCEPTIONS
+
+Class object
+Class Throwable
+aqui vamos ter a primeira bifurcação
+
+      Error                      e                         Exception
+0- Erro nao ha tratativas                         Exception se divide em 2 :
+                                      1- EXCEPTION RUNTIME       E      2- IOEXCEPTION
+
+1- Exception Runtime é do tipo não checada que se diz a respeito de um erro no codigo
+por um não tratamento de exceção ou por uma falha.
+
+2-IOException é um erro de input e output, que é do tipo checada,
+onde o proprio sistema não permite a criação de algo ou implementação.
