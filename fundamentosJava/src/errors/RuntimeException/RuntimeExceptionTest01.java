@@ -1,8 +1,8 @@
 package errors.RuntimeException;
-
+//Classe criada para ver o exemplo de erro não checado: Runtime Exception
 public class RuntimeExceptionTest01 {
     public static void main(String[] args) {
-        // DESCOMENTE O CODIGO PARA RODDAR
+        // DESCOMENTE O CODIGO PARA RODAR
 //        //METODO divisão
 //        System.out.println("Resultado da divisão é: " + divisao(4, 0));
 //
