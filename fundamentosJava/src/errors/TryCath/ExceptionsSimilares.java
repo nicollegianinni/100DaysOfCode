@@ -1,5 +1,5 @@
 package errors.TryCath;
-//UNIFICANDO 2 EXCEPTIONS EM UM SÓ TRATAMENTO (TRY CATCH) do java 7 em diante, abaixo tem que fazer separado
+//UNIFICANDO 2 EXCEPTIONS EM UM SÓ TRATAMENTO (TRY CATCH) do JAVA 7 em diante, abaixo tem que fazer separado
 //Aqui vemos novamente os 2 erros de dividir por zero e de não ter posição suficiente do array
 //Então fez se o tratamento dos 2 exception diferente da forma do Try catch multiplo (usando 2 catchs separadamente)
 // Nesse caso a mensagem do erro fica generalizado 'houve um erro' (pq são 2 erros diferentes e apenas uma escrita)

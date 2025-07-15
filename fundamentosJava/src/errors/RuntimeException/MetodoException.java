@@ -1,8 +1,10 @@
-package errors.TryCath;
+package errors.RuntimeException;
 //Criando um erro para entender o try cath
 //criamos um array (vetor) onde tem 4 pósições alocadas.
 //vamos chamar a 5 posição para ver o erro e tratar
-public class Exception {
+//É IMPORTANTE COLOCAR O METODO DA EXCEPTION PRINTSTACKTRACE() PARA VER NOS LOGS
+//EX.: BIBLIOTECAS COMO LOGS4J, ULTILIZARÁ ESSAS INFORMAÇÕES PARA MONTAR ARQYUIVOS DE REGISTROS DE LOGS.
+public class MetodoException {
     public static void main(String[] args) {
 
         //EXEMPLO 1
