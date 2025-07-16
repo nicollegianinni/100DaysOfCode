@@ -1,4 +1,4 @@
-package errors.IOException;
+package errors.IOException.dominio;
 
 import errors.IOException.dominio.Leitor1;
 import errors.IOException.dominio.Leitor2;
