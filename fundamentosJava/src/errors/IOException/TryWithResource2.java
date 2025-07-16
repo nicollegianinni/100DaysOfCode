@@ -3,7 +3,7 @@ package errors.IOException;
 import java.io.*;
 
 //LEITURA E FECHAMENTO DE ARQUIVO READER E CLOSE(), DA CLASSE MÃE Readeable e Closeable
-public class TryWithResource {
+public class TryWithResource2 {
 
     public static void main(String[] args)  { //para rodar o metodo lerArquivo3() precisa da assinatura no main throws IOException
 
