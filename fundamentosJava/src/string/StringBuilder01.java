@@ -1,5 +1,6 @@
 package string;
 
+//CLASSE STRING BUFFER E BUILDER
 public class StringBuilder01 {
     public static void main(String[] args) {
 
@@ -13,6 +14,7 @@ public class StringBuilder01 {
         nome = nome.substring(0,3);
         System.out.println(nome); // saida deve ser will
 
+        //PODE MUDAR PARA A CLASSE STRING BUFFER que nada mudara
         StringBuilder sb = new StringBuilder("Wiliam"); // se nao passar nad ano parametro ele cria 16 caracteres
         sb.append(" Dev Dojo").append(" Academy");
         System.out.println(sb); // StringBuilder aparece o nome nao o espaço de memoria pois ele tem to string embutido
