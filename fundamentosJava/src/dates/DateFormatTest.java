@@ -8,8 +8,8 @@ public class DateFormatTest {
 
     public static void main(String[] args) {
 
-        Calendar calendar = Calendar.getInstance();
-        DateFormat[] dateFormat = new DateFormat[7];
+        Calendar calendar = Calendar.getInstance(); // para mostrar a data de hoje precisa instanciar a classe Calendar e chamar ao final
+        DateFormat[] dateFormat = new DateFormat[7]; // Criei um array com os tipos de dataFormat mais usados
 
         dateFormat[0] = DateFormat.getInstance(); // 18/07/2025 12:13
         dateFormat[1] = DateFormat.getDateInstance(); // 18 de jul. de 2025
