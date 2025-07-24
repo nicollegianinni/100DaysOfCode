@@ -2,7 +2,8 @@ package dates;
 
 import java.util.Calendar;
 import java.util.Date;
-
+//CLASS CALENDAR: mostra detalhado o dia do mes, semana etc
+//Porem para mostrar a hora, em qual quer classe, tem que instanciar a classe Date e chamar o metodo getTime()
 public class CalendarTest {
     public static void main(String[] args) {
 

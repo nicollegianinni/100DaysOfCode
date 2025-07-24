@@ -2,10 +2,9 @@ package dates;
 
 import java.text.DateFormat;
 import java.util.Calendar;
-import java.util.Date;
 import java.util.Locale;
-
-public class DateLocaleeTeste {
+// CLASS LOCALE: configuração de localidade e lingua (country e lenguage)
+public class DateLocaleTest {
     public static void main(String[] args) {
 
         //procura na ISO qual lingua e pais você quer informar a data

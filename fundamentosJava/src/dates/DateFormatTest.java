@@ -3,7 +3,9 @@ package dates;
 import java.text.DateFormat;
 import java.util.Calendar;
 
-// CLASSE DATE FORMAT É BASTANTE USADA
+// CLASSE DATE FORMAT É BASTANTE USADA PARA MOSTRAR A DATA DE HOJE NO SITE,
+// pois mostra dia da semana, data, mes, ano em diversos formatos
+//Essa é a unica classe que nao precisa chamar a classe Date para mostrar a hora.
 public class DateFormatTest {
 
     public static void main(String[] args) {
