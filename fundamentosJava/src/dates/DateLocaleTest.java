@@ -7,6 +7,8 @@ import java.util.Locale;
 public class DateLocaleTest {
     public static void main(String[] args) {
 
+        System.out.println(Locale.getDefault());// mostra a linguagem que esta seu computador
+
         //procura na ISO qual lingua e pais você quer informar a data
         //ISO LINGUAS: ISO 639 E PAISES ISO 3766 (lingua portugues PT-BR)
         // EX ITALIA
