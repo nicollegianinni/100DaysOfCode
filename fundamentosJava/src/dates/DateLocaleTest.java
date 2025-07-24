@@ -3,7 +3,7 @@ package dates;
 import java.text.DateFormat;
 import java.util.Calendar;
 import java.util.Locale;
-// CLASS LOCALE: configuração de localidade e lingua (country e lenguage)
+// CLASS LOCALE: configuração de localidade e lingua (country e language)
 public class DateLocaleTest {
     public static void main(String[] args) {
 

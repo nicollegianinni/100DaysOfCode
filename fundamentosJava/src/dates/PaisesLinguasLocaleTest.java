@@ -1,7 +1,7 @@
 package dates;
 
 import java.util.Locale;
-
+// A CLASSE LOCALE MOSTRA O ISO DOS PAISES QUE ELE PERMITE
 public class PaisesLinguasLocaleTest {
     public static void main(String[] args) {
         System.out.println(Locale.getDefault()); // mostra a linguagem que esta seu computador
