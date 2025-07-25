@@ -6,7 +6,7 @@ import java.time.temporal.ChronoField;
 import java.util.Calendar;
 import java.util.Date;
 
-//LOCAL DATE: mostra local e data nao mostra hora. Essa classe é mais recente que o Date e Calendar
+//LOCAL DATE: mostra local e data nao mostra hora. Não pode ser instanciada. Essa classe é mais recente que o Date e Calendar
 public class LocalDateTest {
     public static void main(String[] args) {
 
