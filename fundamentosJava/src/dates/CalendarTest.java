@@ -1,5 +1,6 @@
 package dates;
 
+import java.time.Month;
 import java.util.Calendar;
 import java.util.Date;
 //CLASS CALENDAR: mostra detalhado o dia do mes, semana etc
@@ -39,6 +40,8 @@ public class CalendarTest {
         c.roll(Calendar.DAY_OF_MONTH,2);
         System.out.println(c.getTime());
 
+        //mostrar o mes em numeral
+        System.out.println(Month.JANUARY.getValue()); // janeiro = 1
     }
 
 }
