@@ -3,7 +3,7 @@ package dates;
 
 import java.time.LocalDate;
 import java.time.Period;
-// A CLASSE PERIODO SERVE PARA VER QUANTO DE INTERVALO HA, EM DIAS E ANOS ( nao tranforma dias para meses para isso use a ChronoUnit)
+// A CLASSE PERIODO TRABALHA NUM RANGE PARA DATAS. SERVE PARA VER QUANTO DE INTERVALO HA, EM DIAS E ANOS ( nao tranforma dias para meses para isso use a ChronoUnit)
 public class PeriodTest {
 
     public static void main(String[] args) {

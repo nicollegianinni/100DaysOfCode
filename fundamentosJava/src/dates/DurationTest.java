@@ -5,7 +5,7 @@ import java.time.Instant;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 
-//CLASSE DURATION: para ver o intervalo de tempo entre 2 datas, horas etc
+//CLASSE DURATION TRABALHA COM UM RANGE DE HORAS, para ver o intervalo de tempo entre 2 datas, horas etc
 //baseada em segundos e nano segundos (nao trabalha com data, nao pode usar LocalDate pq só trabalha em nanosegundos)
 public class DurationTest {
     public static void main(String[] args) {

@@ -3,7 +3,7 @@ package dates;
 import java.time.Instant;
 import java.time.LocalDateTime;
 
-//CLASSE INSTANT trabalha como date, mostra os nanosegundos
+//CLASSE INSTANT TRABALHA COM RANGE DE NANOSEGUNDOS E SEGUNDOS
 //ex.: 2025-07-26T02:27:11.367210Z mostra conforme a zona que foi salva no computador
 // usa se a zona UTC zona neutra
 public class InstantTest {
