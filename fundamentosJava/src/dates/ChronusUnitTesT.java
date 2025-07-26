@@ -7,7 +7,7 @@ import java.time.Period;
 import java.time.temporal.ChronoUnit;
 
 //A CLASSE CHRONOS UNIT TRABALHA COM UM RANGE DE DATAS, EM DIAS, ANOS, MESES
-// E TAMBEM TRANFORMAR AS UNIDADES EM ALGUMA OUTRA QUE QUEIRA
+// E TAMBEM TRANFORMAR AS UNIDADES EM ALGUMA OUTRA QUE QUEIRA ATRAVES DO UNTIL
 public class ChronusUnitTesT {
 
     public static void main(String[] args) {
