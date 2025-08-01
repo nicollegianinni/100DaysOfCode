@@ -11,7 +11,7 @@ import java.time.temporal.TemporalAdjuster;
 
 //USANDO A INTERFACE TENMPORAL ADJUSTER: ajusta o tempo ( não ajusta hora)
 //vamos definir uma regra de negocio pq o adjuster so tem 1 metodo
-
+// WITH É A PALAVRA CHAVE AQUI
 //*VAMOS CRIAR UMA NOVA CLASSE para criando uma regra de negocio, sim é possivel no mesmo arquivo (classe publica só pode ter 1)
 
 class ObterProximoDiaUtil implements TemporalAdjuster {
@@ -26,9 +26,9 @@ class ObterProximoDiaUtil implements TemporalAdjuster {
         DayOfWeek dayOfWeek = DayOfWeek.of(temporal.get(ChronoField.DAY_OF_WEEK));
         int addDays = 1;
         switch (dayOfWeek){
-            case MONDAY: addDays = 7;
-            case TUESDAY: addDays = 6;
-            case WEDNESDAY: addDays = 5;
+            case MONDAY: addDays = 7; break;
+            case TUESDAY: addDays = 6; break;
+            case WEDNESDAY: addDays = 5; break;
             case THURSDAY: addDays = 4; break;
             case FRIDAY: addDays = 3; break;
             case SATURDAY: addDays =2; break;
@@ -43,11 +43,14 @@ public class TemporalAdjusterTest {
 
         // Criando objeto da classe 'ObterProximoDiaUtil' que criamos acima ele checara qual dia é hoje
         // e implementara a regra de negoico criada ex.: se hoje é sexta ele adicionara 3 dias logo mostrara o dia da segunda
-        LocalDate agora = LocalDate.now().with( new ObterProximoDiaUtil());
+        LocalDate hoje = LocalDate.now();
+        System.out.println(hoje);// dia de hoje
+
+        LocalDate agora = LocalDate.now().with( new ObterProximoDiaUtil()); // agora + implementação  da classe
         System.out.println(agora); // ele ve quando cai dia 15, e implementa a classe da regra de negocio, vendo qual data cai a proxima segunda
         System.out.println(agora.getDayOfWeek()); // qual dia da semana é hoje
 
-        //restartou o dia para a data de hoje, apos mudou a data para dia 15 e depois chamou a classe da regra de negocio
+        //restartou o dia para a data de hoje, apos ADIANTOU EM 15 DIAS e depois chamou a classe da regra de negocio
         //para saber qual a data será a proxima segunda apartir dessa nova data
         agora = LocalDate.now().withDayOfMonth(15).with( new ObterProximoDiaUtil());
         System.out.println(agora); // ele ve quando cai dia 15, e implementa a classe da regra de negocio, vendo qual data cai a proxima segunda
