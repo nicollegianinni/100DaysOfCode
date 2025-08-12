@@ -1,6 +1,7 @@
 package serialization.test;
 
 import serialization.domain.Aluno;
+import serialization.domain.Turma;
 
 
 import java.io.IOException;
@@ -19,6 +20,8 @@ public class AlunoSerializacaoTest01 {
 
     public static void main(String[] args) {
         Aluno aluno1 = new Aluno(1L, "livia", "123456");
+        Turma turma1 = new Turma("Maratona Java");
+        aluno1.setTurma(turma1);
         serializar(aluno1);
         desserializar();
     }
@@ -38,6 +41,8 @@ public class AlunoSerializacaoTest01 {
     //Nao precisa de objeto no parametro (variavel de referencia) pq o objeto ja esta no arquivo
     // nao é out put stream: você nao quer escrever nada, criar nada.
     // para leitura é in put stream.
+    //DESERIALIZAR NÃO CHAMA O CONSTRUTOR DA CLASSE MAE
+
     private static void desserializar() {
         Path path = Paths.get("arquivo/aluno.ser");
         try (ObjectInputStream ois = new ObjectInputStream(Files.newInputStream(path))) {
