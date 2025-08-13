@@ -24,6 +24,7 @@ public class Aluno implements Serializable {
     }
 
     //Metodo para SERIALIZAR A CLASSE TURMA POR ASSOCIAÇÃO
+    //assim serializa os atributos da classe atraves do metodo 'whiteObject' e 'readObject'
     @Serial
     private void writeObject(ObjectOutputStream oos){
         try{

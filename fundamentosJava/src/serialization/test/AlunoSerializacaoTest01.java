@@ -11,7 +11,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-// CLASSE SERIALIZATION transforma objeto em array de partes e add em um arquivo .ser
+// CLASSE SERIALIZATION transforma objeto em array de bytes e add em um arquivo .ser
 //Para a serialização funcionar precisa implementar na classe do objeto 'Classe aluno' desse package.
 //Trabalha em baixo nivel, você usa NIO IO, classe ObjetctOutputStream para salvar o objeto no arquivo
 //CRIADO ARQUIVO NA PASTA DO DIRETORIO 'ARQUIVO' DESSE PROJETO
