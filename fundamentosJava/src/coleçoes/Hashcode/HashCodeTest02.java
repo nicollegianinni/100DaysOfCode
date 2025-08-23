@@ -11,7 +11,7 @@ public class HashCodeTest02 {
         clientes.add(new Cliente("222.222.222-22", "João"));
         clientes.add(new Cliente("111.111.111-11", "Maria Souza")); // mesmo CPF
 
-        System.out.println(clientes);
+        System.out.println(clientes); // só saira os 2 CPFs ja que o 3 é igual ao 1
     }
 }
 
