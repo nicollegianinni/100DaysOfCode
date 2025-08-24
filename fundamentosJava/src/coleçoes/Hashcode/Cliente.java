@@ -5,7 +5,8 @@ import java.util.Objects;
 // Regras HashCode: Quando se faz uma busca com array se compara com equals, num array grande demora.
 // Hash gera um valor esse valor é usado pelo java pare indexar na coleção, e buscar mais rapido.
 // Alex ( cada letra significa uma letra) A= 1, l =12, e = 5 , x = 24 ; total = 42 )
-// É usado principalmente em estruturas de dados beseadas em hashing:
+
+// É usado principalmente em estruturas de dados beseadas em hashing: ( ver tabela de complexidade de big-o)
 // - hashMap: chave-valor; permite apenas um valor de hash, se for adicionado outro ele susbstitui.
 // - hashSet: Apenas valores unico; permite apenas um unico valor de hash, não podendo ser substituido.
 // - hashTable: Chave-valor, porem não é tao utilizado, preferindo usar atraves do hashmap + colletions.syncronizeMap() ou ConcurrentHashMap
