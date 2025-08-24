@@ -5,7 +5,8 @@ import polimorfismo.servico.CalculadoraImposto;
 
 //POLIMORFISMO
 // PEGAMOS OS ATRUBUTOS DA CLASSE ABSTRACT 'PRODUTO' E REFERENCIAMOS O OBJETO NAS 'CLASSES FILHAS: COMPUTADOR E TOMATE'
-//widening casting: - up casting - casting
+// Widening casting ou up casting: converte para um tipo maior que sua capacidade.
+// Narrowing casting ou down casting: Converte para um tipo menor que sua capacidade.
 public class ProdutoTest02 {
     public static void main(String[] args) {
 
