@@ -1,10 +1,13 @@
 package coleçoes.Hashcode;
 
 import java.util.Objects;
+// O QUE É HASH CODE : numero que você gera, para facilitar a busca nas listas, desconsiderando a poisição,
+//quando evita a colisão de numero hash, a busca é instantanea, trazendo o diretamente o index.
 // EXEMPLO DE CODIGO USANDO HASH
 // Regras HashCode: Quando se faz uma busca com array se compara com equals, num array grande demora.
 // Hash gera um valor esse valor é usado pelo java pare indexar na coleção, e buscar mais rapido.
-// Alex ( cada letra significa uma letra) A= 1, l =12, e = 5 , x = 24 ; total = 42 )
+// Alex ( cada letra significa uma letra) A= 1, l =12, e = 5 , x = 24 ; total = 42 ) o hash do alex é 42
+// Mas o nome DIRK tambem dá 42; Se der colisão otimiz com equals comparando o elemento correto.
 
 // É usado principalmente em estruturas de dados beseadas em hashing: ( ver tabela de complexidade de big-o)
 // - hashMap: chave-valor; permite apenas um valor de hash, se for adicionado outro ele susbstitui.
