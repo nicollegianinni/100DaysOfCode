@@ -15,10 +15,11 @@ import java.util.Objects;
 // - hashTable: Chave-valor, porem não é tao utilizado, preferindo usar atraves do hashmap + colletions.syncronizeMap() ou ConcurrentHashMap
 // Tem que ter cuidado se o hash nao conflitar exemplo, nome Dirk da 42 também.
 // É um numero que vai ser gerado de preferencia unico para cada objeto, tem que dar metch no equals com as regras abaixo.
-// se x.equals(y) == true, y.hashcode() == x.hascode()
-// y.hashcode() == x.hashcode() não necessariamente o equals de y.equals(x) tem que ser true
+// se x.equals(y) == true, y.hashcode() == x.hascode() -> se o equal for igual ao hascode é igual ao que se busca.
+// y.hashcode() == x.hashcode() não necessariamente o equals de y.equals(x) tem que ser true -> , se o hash code é o que você buscou não necessariamente ele é o mesmo, pode ter redundancia como ex.: Alex e Dirk
 // se x.equals(y) == false
-// y.hashcode != x.hashcode(), x.equals(y) deverá ser false.
+// y.hashcode != x.hashcode(), x.equals(y) deverá ser false - > se o hashCode da busca e index não bate, é falso.
+// O EQUALS E O HASHCODE TEM QUE TA EM HARMONIA PARA VIR A BUSCA CORRETA.
 public class Cliente {
     private String cpf;
     private String nome;
