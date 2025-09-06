@@ -9,6 +9,7 @@ public class Lista01 {
         //List é uma interface e arrayList é uma classe que implementa a List
         //usando polimorfismo faz um Narrowing casting pegando a classe mais generalizada (mãe) para a classe mais especializada (filha).
 
+        System.out.println("-----------------Forma antiga de fazer:--------------------");
         List nomes = new ArrayList(); // 1.4 java
         nomes.add("Nicolle");
         nomes.add("Java");
@@ -21,14 +22,14 @@ public class Lista01 {
 
         System.out.println("-----------------Nova forma de fazer----------------------");
         // DEPOIS DO GENERICS NO JAVA 5 PRECISA INTRODUZIR O TIPO ATRAVES DO DIAMOND <>
-        //NÃO PODE CRIAR NENHUMA LISTA DE VARIAVEL PRIMITIVA TEM QUE SER OBJETO USA O WRAPPER ex.: int, double; tem que ser Integer, Double
+        //NÃO PODE CRIAR NENHUMA LISTA DE VARIAVEL PRIMITIVA, TEM QUE SER OBJETO USA O WRAPPER ex.: int, double; tem que ser Integer, Double
         // internamente chama o equals e hashCode e esses não chamam tipos primitivos
 //Pode usar ArrayList no inicio, mas não é indicado | Se você souber o tamanho da lista é uma boa opção colocar no parametro ex.: = new ArrayList(300);
         List<String> listaNomes = new ArrayList(); // Depois de java 7 não precisa colocar <String> depois do new = new ArrayLista <String>();
         listaNomes.add("Livia");
         // agora se tentar colocar um numero dará erro. ex.: listaNomes.add(123);
         //Para ver o que tem na lista FOR EACH | agora pode colocar o tipo da variavel especifica ja que declarou ela no <> da Lista
-        System.out.println("add 1 item a lista");
+        System.out.println("add 1 item a lista:");
         for (String nomess :  listaNomes) {
             System.out.println(nomess);
         }
@@ -46,15 +47,23 @@ public class Lista01 {
         System.out.println();
 
         // REMOVE
-        System.out.println("Removendo index 3");
+        //Removendo pelo index
+        System.out.println("Removendo index 3: Java");
         listaNomes.remove(3);// deve remover o java
         for (String nomess :  listaNomes) {
             System.out.println(nomess);
         }
-
+        //removendo pela string
         System.out.println();
         System.out.println("Removendo Nome Gabrielle");
-        listaNomes.remove("Gabrielle"); // se for identico a String, vai remover Gabrielle da lista
+        //ou remove assim:
+        //listaNomes.remove("Gabrielle"); // se for identico a String, vai remover Gabrielle da lista
+
+        //ou remove assim:
+        //Remove retornando boolean: se excluiu retorna true, se não retorna false
+        System.out.println(listaNomes.remove("Gabrielle"));
+
+        System.out.println();
         for (String nomess :  listaNomes) {
             System.out.println(nomess);
         }
@@ -78,7 +87,7 @@ public class Lista01 {
         System.out.println(listaNomes);
         //todavia essa moto não é uma boa pratica, melhor fazer por filtro
 
-        //ADICIONAR UMA LISTA EM OUTRO
+        //ADICIONAR UMA LISTA EM OUTRA
         System.out.println();
         System.out.println("imagina que agora você tem 2 listas (lista abaixo):");
         List<String> listaNomes2 = new ArrayList();
