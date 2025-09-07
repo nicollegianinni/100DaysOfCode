@@ -1,4 +1,4 @@
 package coleçoes.List;
 
-public class ListObjetos {
+public class Sorting {
 }
