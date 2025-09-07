@@ -64,19 +64,28 @@ public class FilmesSort implements Comparable<FilmesSort> {
 
     @Override
     public int compareTo(FilmesSort outroFilme) {
+        //EXPLICAÇÃO:
         // retorna negativo se o this for menor < que outroFilme  (objeto)
         //se this for == outro filme retorna 0
         // retorna positivo se o this for maior > que o filme
-        if (this.id < outroFilme.getId()) {
-            return -1;
-        }
-        if (this.id.equals(outroFilme.getId())) {
-            return 0;
-        }
-        if (this.id.equals(outroFilme.getId())) {
-            return 0;
-        } else {
-            return 1;
-        }
+
+        //COMPARANDO ATRAVES DO IF
+//        if (this.id < outroFilme.getId()) {
+//            return -1;
+//        }
+//        if (this.id.equals(outroFilme.getId())) {
+//            return 0;
+//        }
+//        if (this.id.equals(outroFilme.getId())) {
+//            return 0;
+//        } else {
+//            return 1;
+//        }
+        //MODO MAIS EFICIENTE DE COMPARAR : COMPARE TO ()
+         return this.id.compareTo(outroFilme.getId());
+
+         //SE QUISER COMPRARA TIPOS PRIMITIVOS TEM QUE TRANSFORMAR EM WARRPER
+         // EX COMPRARA PREÇO
+         //Double.compare(preco,outroFilme.getPreco());
     }
 }
