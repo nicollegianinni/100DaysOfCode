@@ -3,7 +3,7 @@ package coleçoes.List;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Lista01 {
+public class ListIntroducao {
     public static void main(String[] args) {
         //NO INICIO JAVA 1.4 ERA ASSIM:
         //List é uma interface e arrayList é uma classe que implementa a List

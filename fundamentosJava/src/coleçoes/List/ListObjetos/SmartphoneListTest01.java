@@ -1,4 +1,6 @@
-package coleçoes.List;
+package coleçoes.List.ListObjetos;
+
+import coleçoes.List.ListObjetos.SmartphoneList;
 
 import java.util.ArrayList;
 import java.util.List;

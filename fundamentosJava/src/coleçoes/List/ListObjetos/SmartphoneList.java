@@ -1,6 +1,4 @@
-package coleçoes.List;
-
-import java.util.Objects;
+package coleçoes.List.ListObjetos;
 
 public class SmartphoneList {
     //atributos
