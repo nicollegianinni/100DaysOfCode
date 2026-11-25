@@ -2,7 +2,7 @@ package EntardaDados;
 
 import java.util.Scanner;
 
-public class NumerosWhile {
+public class NumerosFor {
 
     public static void main(String[] args) {
 
